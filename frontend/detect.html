@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Detection</title>
+    <link rel="stylesheet" href="detect.css">
+</head>
+
+<body>
+     <a href="index.html" class="back-btn">
+        ← Back
+    </a>
+
+<div class="container">
+
+    <h1 class="title">DeepFake Image Detection</h1>
+
+    <div class="upload-card">
+        <input type="file" id="imageInput" accept="image/*">
+
+        <div class="preview-area">
+            <img id="previewImage">
+            <p id="placeholderText">No Image Selected</p>
+        </div>
+
+        <button class="detect-btn" onclick="detectDeepfake()">Analyze Image</button>
+    </div>
+
+    <div class="loader" id="loader"></div>
+
+    <div class="result-box" id="resultBox">
+    <h2 id="resultText"></h2>
+    <p id="confidenceText"></p>
+
+    <button class="another-btn" onclick="resetDetection()">Analyze Another Image</button>
+    </div>
+   
+
+
+
+</div>
+
+<script src="detect.js"></script>
+</body>
+</html>
