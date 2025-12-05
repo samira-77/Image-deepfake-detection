@@ -28,7 +28,7 @@ function detectDeepfake() {
     loader.style.display = "block";
     resultBox.style.display = "none";
 
-    fetch("http://localhost:5000/predict", {
+    fetch("https://image-deepfake-detection-ssgi.onrender.com/predict", {
         method: "POST",
         body: formData
     })
