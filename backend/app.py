@@ -7,7 +7,8 @@ from PIL import Image
 import io
 import os
 
-from model_definitions.EfficientNetLSTM import EfficientNetLSTM
+from backend.model_definitions.EfficientNetLSTM import EfficientNetLSTM
+
 
 app = Flask(__name__)
 CORS(app)
